@@ -3,48 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frutiger Aero Bubble Gallery</title>
+    <title>Frutiger Aero Retro Site</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- 页面头部 -->
     <header>
-        <h1>Floating Through The Bubble Net</h1>
+        <h1>Welcome to the Bubble Archive</h1>
     </header>
 
-    <marquee behavior="scroll" direction="left">Welcome to the gallery - Click the bubbles to explore more!</marquee>
+    <!-- 滚动公告条 -->
+    <marquee behavior="scroll" direction="left">
+        Latest Updates: Floating through the digital clouds...
+    </marquee>
 
+    <!-- 主要内容区域：漂浮的泡泡链接 -->
     <main>
         <div class="posts">
             <div class="bubble">
-                <img src="https://raw.githubusercontent.com/yuy91/website-for-crit/main/imagepost1.jpg" alt="Post 1">
-                <a href="post1.html">Study Finds 87% Of Conversations...</a>
+                <a href="post1.html">Study Finds 87% Of Conversations Are Just People Saying “That’s Crazy”</a>
             </div>
             <div class="bubble">
-                <img src="https://raw.githubusercontent.com/yuy91/website-for-crit/main/imagepost2.jpg" alt="Post 2">
                 <a href="post2.html">Creepy Story Archive Entry</a>
             </div>
             <div class="bubble">
-                <img src="https://raw.githubusercontent.com/yuy91/website-for-crit/main/imagepost3.jpg" alt="Post 3">
-                <a href="post3.html">Florida Man Throws Alligator...</a>
+                <a href="post3.html">Florida Man Throws Alligator Into Drive-Thru Window</a>
             </div>
-            <!-- 其他帖子 -->
+            <div class="bubble">
+                <a href="post4.html">Untitled Film Review #12</a>
+            </div>
+            <div class="bubble">
+                <a href="post5.html">Forum Thread: My Friend Keeps Dating My Exes</a>
+            </div>
+            <div class="bubble">
+                <a href="post6.html">Untitled Note Scan</a>
+            </div>
         </div>
     </main>
 
+    <!-- 页面底部 -->
     <footer>
-        <p>© 2024 Bubble Net Archive</p>
+        <p>© 2024 Bubble Archive | Floating Since 1999</p>
     </footer>
 
     <!-- 弹窗广告 -->
     <div id="popup-ad">
         <div class="popup-header">
-            <span>Advertisement</span>
+            <span>System Message</span>
             <button id="close-btn">X</button>
         </div>
         <h2>HAVE U SEEN THIS CAT?</h2>
-        <img src="https://github.com/yuy91/website-for-crit/blob/main/IMG_0003.PNG" alt="Lost Cat">
+        <img src="https://raw.githubusercontent.com/yuy91/website-for-crit/main/your-cat-image.png" alt="Lost Cat">
         <p class="popup-text">he just lost his balls</p>
-        <img class="gif-icon" src="https://i.gifer.com/7VE.gif" alt="alert">
     </div>
 
     <!-- 弹窗控制脚本 -->
@@ -52,7 +62,7 @@
         window.onload = function() {
             setTimeout(function() {
                 document.getElementById('popup-ad').style.display = 'block';
-            }, 3000);  // 3秒后弹出
+            }, 2000);  // 2秒后弹出
             document.getElementById('close-btn').onclick = function() {
                 document.getElementById('popup-ad').style.display = 'none';
             }
