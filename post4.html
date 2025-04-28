@@ -2,20 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Film Review</title>
-   <link rel="stylesheet" href="style-post.css">
+    <title>Film Critic Profile</title>
+    <link rel="stylesheet" href="style-post.css">
+    <style>
+        .profile-container {
+            text-align: center;
+        }
+        .profile-pic {
+            width: 200px;
+            border: 3px solid #00008b;
+            margin-bottom: 20px;
+        }
+        .review {
+            margin: 20px auto;
+            max-width: 700px;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 15px;
+            border: 2px dashed #00008b;
+            font-family: Arial, sans-serif;
+        }
+        .stars {
+            margin-top: 10px;
+            color: gold;
+            font-size: 1.2em;
+        }
+        .film-title {
+            font-weight: bold;
+            color: #00008b;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+    </style>
 </head>
 <body>
-    <div class="post-container">
-        <h2 class="post-title">Untitled Film Review #12</h2>
-        <img src="images/imagepost4.jpg" alt="Film Review">
-        <p>
-            "This is a film where nothing happens, yet everything feels heavy."<br><br>
-            With no dialogue, no plot, and no clear narrative, the film stands as a poignant commentary on the void of modern existence.<br><br>
-            The film’s slow pacing and unsettling silence force the viewer to confront the rawness of everyday life. Every frame lingers, almost daring the viewer to search for meaning.<br><br>
-            Despite the lack of traditional cinematic elements, the director’s use of minimalist imagery and haunting visuals leaves an indelible mark.<br><br>
-            "It’s a work that asks more questions than it answers," said one critic. "But that’s what makes it so unforgettable."
-        </p>
+    <div class="post-container profile-container">
+        <!-- 人物头像 -->
+        <img src="https://raw.githubusercontent.com/yuy91/website-for-crit/main/PF94new.webp" alt="Critic Photo" class="profile-pic">
+
+        <!-- 影评列表 -->
+        <div class="review">
+            <div class="film-title">1. The Shawshank Redemption</div>
+            Two guys digging their way out of prison for two hours, with endless talk about “hope.” The escape is the only exciting part.
+            <div class="stars">★★☆☆☆</div>
+        </div>
+
+        <div class="review">
+            <div class="film-title">2. La La Land</div>
+            Two people whining about their “dreams” in LA. The ending? Tears for no reason.
+            <div class="stars">★★☆☆☆</div>
+        </div>
+
+        <div class="review">
+            <div class="film-title">3. Eternal Sunshine of the Spotless Mind</div>
+            A confusing mess of strange visuals and random philosophical ideas.
+            <div class="stars">★★★☆☆</div>
+        </div>
+
+        <div class="review">
+            <div class="film-title">4. Her</div>
+            A guy falls in love with his operating system. Weird and awkward.
+            <div class="stars">★★☆☆☆</div>
+        </div>
+
+        <div class="review">
+            <div class="film-title">5. The Social Network</div>
+            Nerds yelling at each other in a basement. Makes you want to delete your social media.
+            <div class="stars">★★★☆☆</div>
+        </div>
+
+        <div class="review">
+            <div class="film-title">6. Fight Club</div>
+            An excuse to punch people, with a twist that's overrated.
+            <div class="stars">★★★☆☆</div>
+        </div>
+
+        <div class="review">
+            <div class="film-title">7. Donnie Darko</div>
+            Tries too hard to be deep. Confusion with no payoff.
+            <div class="stars">★★☆☆☆</div>
+        </div>
+
+        <div class="review">
+            <div class="film-title">8. The Graduate</div>
+            A confused guy stumbling through life and romance. Overhyped.
+            <div class="stars">★★☆☆☆</div>
+        </div>
+
         <a class="back-link" href="index.html">← Back to Home</a>
     </div>
 </body>
