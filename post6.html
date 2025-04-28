@@ -9,6 +9,7 @@
             text-align: center;
             color: #00008b;
             margin-bottom: 20px;
+            font-family: Arial, Verdana, sans-serif;
         }
         .play-button {
             display: block;
@@ -26,9 +27,12 @@
         <p class="game-intro">The ultimate way to waste your precious time online.</p>
 
         <!-- 复古GIF按钮 -->
-        <img src="https://i.imgur.com/0XjK0GQ.gif" alt="PLAY NOW" class="play-button" onclick="document.getElementById('game-frame').style.display='block'; this.style.display='none';">
+        <img src="https://i.postimg.cc/gjJ9N0jC/play-now.gif" 
+             alt="PLAY NOW" 
+             class="play-button" 
+             onclick="document.getElementById('game-frame').style.display='block'; this.style.display='none';">
 
-        <!-- 隐藏的小游戏 iframe -->
+        <!-- 嵌入的小游戏 iframe，高度900px -->
         <div id="game-frame">
             <iframe src="https://www.bubbleshooter.net/" width="100%" height="900px" style="border:2px solid #000; border-radius:10px;"></iframe>
         </div>
