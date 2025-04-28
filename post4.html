@@ -11,38 +11,53 @@
             background-size: cover;
             color: #000;
         }
-        .profile-header {
-            background-color: #dbe9f4;
+        .top-bar {
+            background-color: #3b5998;
+            color: white;
             padding: 10px;
             text-align: center;
             font-weight: bold;
             font-size: 1.5em;
-            border-bottom: 2px solid #aaa;
         }
-        .profile-info {
-            display: flex;
-            justify-content: center;
-            background: rgba(255,255,255,0.8);
-            padding: 20px;
-            margin: 20px auto;
-            width: 80%;
+        .profile-section {
+            background: #f2f2f2;
+            width: 85%;
             max-width: 800px;
-            border: 2px solid #00008b;
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+        }
+        .profile-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
         }
         .profile-pic {
             width: 100px;
             height: 100px;
+            border-radius: 5px;
             margin-right: 20px;
         }
-        .basic-info {
-            text-align: left;
+        .stats {
+            display: flex;
+            gap: 20px;
+            font-size: 0.9em;
+        }
+        .stats div {
+            text-align: center;
+        }
+        .bio {
+            margin-top: 15px;
+            font-size: 0.9em;
         }
         .reviews {
-            width: 80%;
-            margin: 0 auto 30px auto;
+            width: 85%;
+            margin: 30px auto;
         }
         .review {
-            background: rgba(255,255,255,0.7);
+            background: rgba(255,255,255,0.8);
             border: 1px dashed #00008b;
             padding: 15px;
             margin: 15px 0;
@@ -59,21 +74,26 @@
 </head>
 <body>
 
-    <div class="profile-header">user2769</div>
+    <div class="top-bar">user2769</div>
 
-    <div class="profile-info">
-        <img src="https://raw.githubusercontent.com/yuy91/website-for-crit/main/PF94new.webp" alt="User Avatar" class="profile-pic">
-        <div class="basic-info">
-            <p><strong>Location:</strong> Internet</p>
-            <p><strong>Member Since:</strong> 2024</p>
-            <p><strong>Favorite Genre:</strong> Existential Drama</p>
-            <p><strong>Followers:</strong> 0</p>
-            <p><strong>Posts:</strong> 8</p>
+    <div class="profile-section">
+        <div class="profile-header">
+            <img src="https://raw.githubusercontent.com/yuy91/website-for-crit/main/PF94new.webp" alt="User Avatar" class="profile-pic">
+            <div class="stats">
+                <div><strong>8</strong><br>posts</div>
+                <div><strong>235</strong><br>following</div>
+                <div><strong>0</strong><br>followers</div>
+            </div>
+        </div>
+        <div class="bio">
+            <strong>Location:</strong> Internet<br>
+            <strong>Member Since:</strong> 2000<br>
+            <strong>Favorite Genre:</strong> Existential Drama<br>
+            Watching films so you don't have to.
         </div>
     </div>
 
     <div class="reviews">
-
         <div class="review">
             <div class="film-title">1. The Shawshank Redemption</div>
             Two guys digging their way out of prison for two hours, with endless talk about “hope.” The movie is supposed to be deep, but honestly, it’s just two guys wasting time in prison. The escape is the only exciting part, but even that feels like a long wait for something that barely makes a dent.
@@ -121,7 +141,6 @@
             A confused guy dating an older woman and trying to figure his life out. Overhyped as a “classic”.
             <div class="stars">★★☆☆☆</div>
         </div>
-
     </div>
 
     <a class="back-link" href="index.html">← Back to Home</a>
