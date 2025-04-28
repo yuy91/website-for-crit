@@ -79,7 +79,7 @@ footer {
 }
 
 /* 复古Windows弹窗样式 */
-/* 复古Windows弹窗样式 */
+
 #popup-ad {
     position: fixed;
     bottom: 20px;
@@ -102,6 +102,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     font-size: 0.9em;
+    font-family: 'Tahoma', 'Geneva', 'Arial', sans-serif;
 }
 
 #close-btn {
