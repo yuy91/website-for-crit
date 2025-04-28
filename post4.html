@@ -2,93 +2,129 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Film Critic Profile</title>
+    <title>user2769 Profile</title>
     <link rel="stylesheet" href="style-post.css">
     <style>
-        .profile-container {
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://raw.githubusercontent.com/yuy91/website-for-crit/main/frutiger-aero-wallpapers-v0-257rv62urfkc1.png.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #000;
+        }
+        .profile-header {
+            background-color: #dbe9f4;
+            padding: 10px;
             text-align: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            border-bottom: 2px solid #aaa;
+        }
+        .profile-info {
+            display: flex;
+            justify-content: center;
+            background: rgba(255,255,255,0.8);
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+            border: 2px solid #00008b;
         }
         .profile-pic {
-            width: 200px;
-            border: 3px solid #00008b;
-            margin-bottom: 20px;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .basic-info {
+            text-align: left;
+        }
+        .reviews {
+            width: 80%;
+            margin: 0 auto 30px auto;
         }
         .review {
-            margin: 20px auto;
-            max-width: 700px;
-            background: rgba(255, 255, 255, 0.6);
+            background: rgba(255,255,255,0.7);
+            border: 1px dashed #00008b;
             padding: 15px;
-            border: 2px dashed #00008b;
-            font-family: Arial, sans-serif;
-        }
-        .stars {
-            margin-top: 10px;
-            color: gold;
-            font-size: 1.2em;
+            margin: 15px 0;
         }
         .film-title {
             font-weight: bold;
             color: #00008b;
-            margin-bottom: 8px;
-            font-size: 1.1em;
+        }
+        .stars {
+            color: gold;
+            margin-top: 8px;
         }
     </style>
 </head>
 <body>
-    <div class="post-container profile-container">
-        <!-- 人物头像 -->
-        <img src="https://raw.githubusercontent.com/yuy91/website-for-crit/main/PF94new.webp" alt="Critic Photo" class="profile-pic">
 
-        <!-- 影评列表 -->
+    <div class="profile-header">user2769</div>
+
+    <div class="profile-info">
+        <img src="https://raw.githubusercontent.com/yuy91/website-for-crit/main/PF94new.webp" alt="User Avatar" class="profile-pic">
+        <div class="basic-info">
+            <p><strong>Location:</strong> Internet</p>
+            <p><strong>Member Since:</strong> 2024</p>
+            <p><strong>Favorite Genre:</strong> Existential Drama</p>
+            <p><strong>Followers:</strong> 0</p>
+            <p><strong>Posts:</strong> 8</p>
+        </div>
+    </div>
+
+    <div class="reviews">
+
         <div class="review">
             <div class="film-title">1. The Shawshank Redemption</div>
-            Two guys digging their way out of prison for two hours, with endless talk about “hope.” The escape is the only exciting part.
+            Two guys digging their way out of prison for two hours, with endless talk about “hope.” The movie is supposed to be deep, but honestly, it’s just two guys wasting time in prison. The escape is the only exciting part, but even that feels like a long wait for something that barely makes a dent.
             <div class="stars">★★☆☆☆</div>
         </div>
 
         <div class="review">
             <div class="film-title">2. La La Land</div>
-            Two people whining about their “dreams” in LA. The ending? Tears for no reason.
+            Two people whining about their “dreams” in LA while dancing around in a movie that’s meant to be inspiring. It’s like a first-world problem the movie. The ending? Tears for no reason.
             <div class="stars">★★☆☆☆</div>
         </div>
 
         <div class="review">
             <div class="film-title">3. Eternal Sunshine of the Spotless Mind</div>
-            A confusing mess of strange visuals and random philosophical ideas.
+            A movie about erasing memories of an ex, which sounds like a good idea until the movie becomes a confusing mess of strange visuals and random philosophical ideas.
             <div class="stars">★★★☆☆</div>
         </div>
 
         <div class="review">
             <div class="film-title">4. Her</div>
-            A guy falls in love with his operating system. Weird and awkward.
+            A guy falls in love with his operating system. It’s weird and awkward, mostly just makes you question the idea of AI relationships.
             <div class="stars">★★☆☆☆</div>
         </div>
 
         <div class="review">
             <div class="film-title">5. The Social Network</div>
-            Nerds yelling at each other in a basement. Makes you want to delete your social media.
+            Facebook was created by a guy who can’t even get along with his best friend. By the end, you’ll be too busy thinking about deleting your social media than caring about Zuckerberg’s rise.
             <div class="stars">★★★☆☆</div>
         </div>
 
         <div class="review">
             <div class="film-title">6. Fight Club</div>
-            An excuse to punch people, with a twist that's overrated.
+            A film about a guy who’s fed up with his life and starts an underground fight club. It feels more like an excuse to punch people than some philosophical revelation.
             <div class="stars">★★★☆☆</div>
         </div>
 
         <div class="review">
             <div class="film-title">7. Donnie Darko</div>
-            Tries too hard to be deep. Confusion with no payoff.
+            Time travel, creepy rabbits, and teenage angst—basically a movie that tries too hard to be deep. All confusion with no real payoff.
             <div class="stars">★★☆☆☆</div>
         </div>
 
         <div class="review">
             <div class="film-title">8. The Graduate</div>
-            A confused guy stumbling through life and romance. Overhyped.
+            A confused guy dating an older woman and trying to figure his life out. Overhyped as a “classic”.
             <div class="stars">★★☆☆☆</div>
         </div>
 
-        <a class="back-link" href="index.html">← Back to Home</a>
     </div>
+
+    <a class="back-link" href="index.html">← Back to Home</a>
+
 </body>
 </html>
