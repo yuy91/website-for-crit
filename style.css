@@ -36,15 +36,24 @@ marquee {
 
 .bubble {
     width: 200px;
-    height: 200px;
+    height: 250px;
     background: url('https://raw.githubusercontent.com/yuy91/website-for-crit/main/pngimg.com%20-%20soap_bubbles_PNG110008.png') no-repeat center center;
     background-size: contain;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 20px;
     text-align: center;
     animation: float 6s ease-in-out infinite;
+}
+
+/* 图片大小控制 */
+.bubble img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .bubble:nth-child(even) {
@@ -55,9 +64,7 @@ marquee {
     color: #0000ee;
     text-decoration: underline;
     font-weight: bold;
-    padding: 10px;
-    background: rgba(255,255,255,0.6);
-    border-radius: 10px;
+    padding: 5px;
 }
 
 .bubble a:hover {
