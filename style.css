@@ -1,0 +1,66 @@
+body {
+    background-color: #f4f4f4;
+    font-family: "Courier New", monospace;
+    color: #222;
+    margin: 0;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #0000EE;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 子页面样式 */
+.post-container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.post-container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.post-container p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.back-link {
+    display: block;
+    margin-top: 30px;
+    color: #551A8B;
+}
