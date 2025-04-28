@@ -5,16 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frutiger Aero Retro Site</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        #play-button {
-            width: 100px;
-            cursor: pointer;
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-    </style>
 </head>
 <body>
     <!-- 页面头部 -->
@@ -27,14 +17,12 @@
         Latest Updates: Floating through the digital clouds...
     </marquee>
 
-    <!-- 播放按钮 -->
-    <img id="play-button" src="https://raw.githubusercontent.com/yuy91/website-for-crit/main/image.png" alt="Play Button">
-
-    <!-- 隐藏的音频控件 -->
-    <audio id="my-audio">
-        <source src="https://raw.githubusercontent.com/yuy91/website-for-crit/main/sound_project.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    <!-- 播放按钮（图片版，固定右上角） -->
+    <a href="javascript:void(0)" onclick="openPlayer()">
+        <img src="https://raw.githubusercontent.com/yuy91/website-for-crit/main/image.png" 
+             alt="Play Audio" 
+             style="width:80px; position:fixed; top:20px; right:20px; z-index:1000;">
+    </a>
 
     <!-- 主要内容区域：漂浮的泡泡链接 -->
     <main>
@@ -90,10 +78,9 @@
             }
         }
 
-        // 点击播放音频
-        document.getElementById('play-button').onclick = function() {
-            var audio = document.getElementById('my-audio');
-            audio.play();
+        // 打开音频播放器窗口
+        function openPlayer() {
+            window.open('player.html', '_blank', 'width=300,height=120');
         }
     </script>
 </body>
