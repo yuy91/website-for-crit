@@ -1,156 +1,126 @@
-/* General Styles */
 body {
-    font-family: 'Press Start 2P', sans-serif;
-    background-color: #f0f0f0;
-    color: #000;
+    font-family: Arial, Verdana, sans-serif;
+    background: url('https://raw.githubusercontent.com/yuy91/website-for-crit/main/frutiger-aero-wallpapers-v0-257rv62urfkc1.png.webp') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    color: #000;
 }
 
 header {
-    background-color: #90e0ef;
     text-align: center;
-    padding: 10px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.5);
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: white;
+h1 {
+    font-size: 2em;
+    color: #00008b;
 }
 
-/* Marquee for the latest updates */
 marquee {
-    font-size: 1.2em;
-    color: #1d3557;
-    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.7);
+    color: #0000ee;
+    font-weight: bold;
+    padding: 8px 0;
+    border-top: 2px solid #0000ee;
+    border-bottom: 2px solid #0000ee;
 }
 
-/* Main Content */
-main {
-    padding: 20px;
+.posts {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 20px;
+    justify-content: center;
+    padding: 30px;
 }
 
-/* Bubble Styling */
 .bubble {
-    background-color: white;
-    border-radius: 50%;
-    padding: 30px;
-    width: 250px;
-    height: 250px;
-    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: url('https://raw.githubusercontent.com/yuy91/website-for-crit/main/pngimg.com%20-%20soap_bubbles_PNG110008.png') no-repeat center center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 20px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    position: relative;
     text-align: center;
-    vertical-align: middle;
+    animation: float 6s ease-in-out infinite;
+}
+
+.bubble:nth-child(even) {
+    animation-delay: 3s;
 }
 
 .bubble a {
-    color: #1d3557;
+    color: #0000ee;
+    text-decoration: underline;
     font-weight: bold;
-    text-decoration: none;
-    font-size: 1.1em;
+    padding: 10px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 10px;
 }
 
 .bubble a:hover {
-    color: #f1faee;
+    color: #551a8b;
 }
 
-/* Popup Styles */
-#popup-ad {
-    display: none;  /* Hidden by default */
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #D3D3D3;  /* Light gray background */
-    width: 300px;
-    padding: 20px;
-    border: 5px solid #1d3557;  /* Blue border for retro feel */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    z-index: 1000;
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+footer {
     text-align: center;
-    font-size: 1.2em;
-    transition: all 0.3s ease;
+    padding: 15px 0;
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: 40px;
+    font-size: 0.9em;
 }
 
-.popup-header {
-    background: linear-gradient(to right, #1d3557, #4a90e2);  /* Blue gradient background */
+/* 复古Windows弹窗样式 */
+#popup-ad {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 220px;
+    background: #ececec;
+    border: 2px solid #000;
+    box-shadow: 4px 4px #555;
+    font-family: Arial, sans-serif;
+    z-index: 999;
+    display: none;
+}
+
+.popup-titlebar {
+    background: #000080;
     color: white;
     padding: 5px;
     font-weight: bold;
-    border-radius: 8px 8px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.popup-header span {
-    font-size: 1.3em;
+    font-size: 0.9em;
 }
 
 #close-btn {
-    background-color: #ff3333;
+    background: #ff0000;
     color: white;
     border: none;
-    padding: 5px 10px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
-    border-radius: 5px;
+    font-weight: bold;
 }
 
-#close-btn:hover {
-    background-color: #cc2929;
+.popup-content {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.85em;
 }
 
 .popup-content img {
-    width: 100%;
-    height: auto;
-    margin-top: 15px;
-}
-
-.popup-text {
-    font-size: 1em;
-    margin-top: 10px;
-    color: #1d3557;
-    font-style: italic;
-}
-
-/* Footer */
-footer {
-    background-color: #90e0ef;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 40px;
-}
-
-footer p {
-    margin: 0;
-    font-size: 1em;
-    color: #1d3557;
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-    .bubble {
-        width: 200px;
-        height: 200px;
-        padding: 15px;
-    }
-
-    .popup-ad {
-        width: 250px;
-    }
-
-    .popup-text {
-        font-size: 0.9em;
-    }
+    width: 80%;
+    margin: 8px 0;
+    border: 1px solid #000;
 }
