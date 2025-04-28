@@ -57,6 +57,24 @@ marquee {
     margin: 15px;
     padding: 10px;
     text-align: center;
+
+    /* 漂浮动画 */
+    animation: float 6s ease-in-out infinite;
+    position: relative;
+}
+
+.bubble:nth-child(odd) {
+    animation-delay: 0s;
+}
+
+.bubble:nth-child(even) {
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
 }
 
 .bubble img {
@@ -67,6 +85,12 @@ marquee {
 .post-text {
     font-size: 0.9em;
     color: #333333;
+}
+
+.comment {
+    font-size: 0.8em;
+    color: #555;
+    font-style: italic;
 }
 
 footer {
