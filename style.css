@@ -1,123 +1,79 @@
 body {
-    font-family: 'Comic Sans MS', 'Press Start 2P', cursive;
-    background: linear-gradient(45deg, #f8f8f8 25%, #90e0ef 100%);
-    background-image: url('https://www.transparenttextures.com/patterns/old-wall.png');
-    color: #000;
+    font-family: Arial, Verdana, sans-serif;
+    background: url('https://raw.githubusercontent.com/yuy91/website-for-crit/main/frutiger-aero-wallpapers-v0-257rv62urfkc1.png.webp') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
-}
-
-a {
-    text-decoration: none;
+    color: #000;
 }
 
 header {
-    background-color: #ff69b4;
     text-align: center;
-    padding: 10px 0;
-    border-bottom: 5px dotted #0000ff;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 h1 {
     font-size: 2em;
-    color: yellow;
-    text-shadow: 2px 2px #ff0000;
-}
-
-nav a {
-    color: #0000ff;
-    margin: 0 15px;
-}
-
-nav a:hover {
-    color: #ff0000;
+    color: #00008b;
 }
 
 marquee {
-    background: #ffff00;
-    color: #ff0000;
+    background: rgba(255, 255, 255, 0.7);
+    color: #0000ee;
     font-weight: bold;
-    padding: 5px 0;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
+    padding: 8px 0;
+    border-top: 2px solid #0000ee;
+    border-bottom: 2px solid #0000ee;
 }
 
 .posts {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px;
+    padding: 30px;
 }
 
 .bubble {
-    background-color: #ffffff;
-    border: 3px solid #0000ff;
-    box-shadow: 5px 5px 0px #ff00ff;
-    width: 250px;
-    margin: 15px;
-    padding: 10px;
+    width: 200px;
+    height: 200px;
+    background: url('https://raw.githubusercontent.com/yuy91/website-for-crit/main/pngimg.com%20-%20soap_bubbles_PNG110008.png') no-repeat center center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
     text-align: center;
-
-    /* 漂浮动画 */
     animation: float 6s ease-in-out infinite;
-    position: relative;
-}
-
-.bubble:nth-child(odd) {
-    animation-delay: 0s;
 }
 
 .bubble:nth-child(even) {
     animation-delay: 3s;
 }
 
+.bubble a {
+    color: #0000ee;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 10px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 10px;
+}
+
+.bubble a:hover {
+    color: #551a8b;
+}
+
 @keyframes float {
     0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+    50% { transform: translateY(-15px); }
     100% { transform: translateY(0px); }
 }
 
-.bubble img {
-    width: 100%;
-    border: 2px inset #000;
-}
-
-.post-text {
-    font-size: 0.9em;
-    color: #333333;
-}
-
-.comment {
-    font-size: 0.8em;
-    color: #555;
-    font-style: italic;
-}
-
 footer {
-    background-color: #ff69b4;
     text-align: center;
-    padding: 10px 0;
-    border-top: 5px dotted #0000ff;
-    margin-top: 30px;
-}
-
-.blink {
-    animation: blink-animation 1s steps(5, start) infinite;
-}
-
-@keyframes blink-animation {
-    to {
-        visibility: hidden;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .posts {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .bubble {
-        width: 80%;
-    }
+    padding: 15px 0;
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: 40px;
+    font-size: 0.9em;
 }
