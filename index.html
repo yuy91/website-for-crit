@@ -46,15 +46,17 @@
         <p>© 2024 Bubble Archive | Floating Since 1999</p>
     </footer>
 
-    <!-- 弹窗广告 -->
+    <!-- 复古Windows风格弹窗 -->
     <div id="popup-ad">
-        <div class="popup-header">
+        <div class="popup-titlebar">
             <span>System Message</span>
-            <button id="close-btn">X</button>
+            <button id="close-btn">✕</button>
         </div>
-        <h2>HAVE U SEEN THIS CAT?</h2>
-        <img src="https://raw.githubusercontent.com/yuy91/website-for-crit/main/IMG_0003.PNG" alt="Lost Cat">
-        <p class="popup-text">he just lost his balls</p>
+        <div class="popup-content">
+            <strong>HAVE U SEEN THIS CAT?</strong>
+            <img src="https://raw.githubusercontent.com/yuy91/website-for-crit/main/IMG_0003.PNG" alt="Lost Cat">
+            <p>he just lost his balls</p>
+        </div>
     </div>
 
     <!-- 弹窗控制脚本 -->
@@ -62,7 +64,7 @@
         window.onload = function() {
             setTimeout(function() {
                 document.getElementById('popup-ad').style.display = 'block';
-            }, 2000);  // 2秒后弹出
+            }, 2000);
             document.getElementById('close-btn').onclick = function() {
                 document.getElementById('popup-ad').style.display = 'none';
             }
