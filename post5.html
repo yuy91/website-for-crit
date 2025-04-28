@@ -3,32 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <title>Forum Thread</title>
-  <link rel="stylesheet" href="style-post.css">
+    <link rel="stylesheet" href="style-post.css">
+    <style>
+        body {
+            background-color: #f0f4e8;
+            font-family: 'Courier New', Courier, monospace;
+            color: #222;
+        }
+        .thread-container {
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #999;
+        }
+        .post-title {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #000080;
+        }
+        .post-main {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .post-main img {
+            width: 150px;
+            margin-right: 15px;
+            border: 1px solid #666;
+        }
+        .post-content {
+            max-width: 700px;
+        }
+        .username {
+            color: #117743;
+            font-weight: bold;
+        }
+        .reply {
+            margin-bottom: 15px;
+        }
+        .deleted {
+            color: #888;
+            font-style: italic;
+        }
+        .time-stamp {
+            color: #555;
+            font-size: 0.9em;
+        }
+        a {
+            color: #0000ee;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <div class="post-container">
-        <h2 class="post-title">Forum Thread: My Friend Keeps Dating My Exes</h2>
-        <img src="https://github.com/yuy91/website-for-crit/blob/main/1268.jpg" alt="Forum Thread">
-        <p>
-            <b>User123:</b> My friend keeps dating my exes... Should I say something?<br><br>
+    <div class="thread-container">
+        <div class="post-title">Forum Thread: My Friend Keeps Dating My Exes</div>
+        <div class="post-main">
+            <img src="https://raw.githubusercontent.com/yuy91/website-for-crit/main/1268.jpg" alt="Forum Thread">
+            <div class="post-content">
+                <span class="username">User123:</span> My friend keeps dating my exes... Should I say something?
+            </div>
+        </div>
 
-            <b>Reply1:</b> Honestly, hang them on eBay—at least you'd make some money.<br><br>
+        <div class="reply"><span class="username">Reply1:</span> Honestly, hang them on eBay—at least you'd make some money.</div>
+        <div class="reply"><span class="username">Reply2:</span> If this happened once, I'd be mad. Twice? We’re not friends anymore.</div>
+        <div class="reply"><span class="username">Reply3:</span> She’s probably jealous. You have the life she wants, so she copies everything.</div>
+        <div class="reply deleted">[Deleted Comment]</div>
+        <div class="reply"><span class="username">Reply4:</span> Ever thought maybe she likes you and this is her way of staying close?</div>
+        <div class="reply"><span class="username">Reply5:</span> She must be really insecure. I think you should talk to her about it.</div>
+        <div class="reply"><span class="username">Reply6:</span> Maybe she’s just making sure your leftovers are safe. True friend vibes.</div>
 
-            <b>Reply2:</b> If this happened once, I'd be mad. Twice? We’re not friends anymore.<br><br>
+        <div class="time-stamp">5 mins ago</div>
 
-            <b>Reply3:</b> She’s probably jealous. You have the life she wants, so she copies everything.<br><br>
-
-            <b>[Deleted Comment]</b><br><br>
-
-            <b>Reply4:</b> Ever thought maybe she likes you and this is her way of staying close?<br><br>
-
-            <b>Reply5:</b> She must be really insecure. I think you should talk to her about it.<br><br>
-
-            <b>Reply6:</b> Maybe she’s just making sure your leftovers are safe. True friend vibes.<br><br>
-
-            <b class="time-stamp">5 mins ago</b>
-        </p>
-        <a class="back-link" href="index.html">← Back to Home</a>
+        <br><a href="index.html">← Back to Home</a>
     </div>
 </body>
 </html>
