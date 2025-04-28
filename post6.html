@@ -2,25 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Note Scan</title>
-     <link rel="stylesheet" href="style-post.css">
+    <title>BUBBLE SHOOTER DELUXE 2004</title>
+    <link rel="stylesheet" href="style-post.css">
+    <style>
+        .game-intro {
+            text-align: center;
+            color: #00008b;
+            margin-bottom: 20px;
+        }
+        .play-button {
+            display: block;
+            margin: 0 auto 20px auto;
+            cursor: pointer;
+        }
+        #game-frame {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div class="post-container">
-        <h2 class="post-title">Untitled Note Scan</h2>
-        <img src="images/imagepost6.jpg" alt="Note Scan">
-        <p>
-            fragmented//thoughts...<br>
-            remember to forget.<br><br>
+        <h2 class="post-title">BUBBLE SHOOTER DELUXE 2004</h2>
+        <p class="game-intro">The ultimate way to waste your precious time online.</p>
 
-            404 feelings not found.<br>
-            "*static noise*"<br><br>
+        <!-- 复古GIF按钮 -->
+        <img src="https://i.imgur.com/0XjK0GQ.gif" alt="PLAY NOW" class="play-button" onclick="document.getElementById('game-frame').style.display='block'; this.style.display='none';">
 
-            — is this art or just digital trash?<br>
-            12:47AM : idea lost.<br><br>
+        <!-- 隐藏的小游戏 iframe -->
+        <div id="game-frame">
+            <iframe src="https://www.bubbleshooter.net/" width="100%" height="600px" style="border:2px solid #000; border-radius:10px;"></iframe>
+        </div>
 
-            [End of note.]
-        </p>
         <a class="back-link" href="index.html">← Back to Home</a>
     </div>
 </body>
