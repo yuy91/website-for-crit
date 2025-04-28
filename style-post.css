@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://raw.githubusercontent.com/yuy91/website-for-crit/main/frutiger-aero-wallpapers-v0-257rv62urfkc1.png.webp') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+}
+
+.post-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.post-title {
+    font-size: 2em;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #000;
+    margin-bottom: 20px;
+}
+
+.post-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.post-container p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #f0f0f0;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #0000ee;
+    text-decoration: underline;
+}
+
+.back-link:hover {
+    color: #551a8b;
+}
