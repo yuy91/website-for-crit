@@ -93,7 +93,7 @@ footer {
 }
 
 .popup-titlebar {
-    background: #000080;
+    background: linear-gradient(to right, #000080, #3a5fcd);
     color: white;
     padding: 5px;
     font-weight: bold;
@@ -119,8 +119,24 @@ footer {
     font-size: 0.85em;
 }
 
+/* 去掉图片边框 */
 .popup-content img {
     width: 80%;
     margin: 8px 0;
-    border: 1px solid #000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 红色闪烁文字 */
+.popup-content p {
+    color: red;
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
