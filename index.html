@@ -5,17 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frutiger Aero Retro Site</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        #play-button {
+            width: 80px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
 </head>
 <body>
     <!-- 页面头部 -->
     <header>
-    <h1>BUBBLES!!!!.......</h1>
+        <h1>BUBBLES!!!!.......</h1>
     </header>
 
     <!-- 滚动公告条 -->
     <marquee behavior="scroll" direction="left">
         Latest Updates: Floating through the digital clouds...
     </marquee>
+
+    <!-- 播放按钮 -->
+    <img id="play-button" src="https://raw.githubusercontent.com/yuy91/website-for-crit/main/image.png" alt="Play Button">
+
+    <!-- 隐藏的音频控件 -->
+    <audio id="my-audio">
+        <source src="https://raw.githubusercontent.com/yuy91/website-for-crit/main/sound_project.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 
     <!-- 主要内容区域：漂浮的泡泡链接 -->
     <main>
@@ -59,8 +78,9 @@
         </div>
     </div>
 
-    <!-- 弹窗控制脚本 -->
+    <!-- 脚本区 -->
     <script>
+        // 弹窗控制
         window.onload = function() {
             setTimeout(function() {
                 document.getElementById('popup-ad').style.display = 'block';
@@ -68,6 +88,12 @@
             document.getElementById('close-btn').onclick = function() {
                 document.getElementById('popup-ad').style.display = 'none';
             }
+        }
+
+        // 点击播放音频
+        document.getElementById('play-button').onclick = function() {
+            var audio = document.getElementById('my-audio');
+            audio.play();
         }
     </script>
 </body>
