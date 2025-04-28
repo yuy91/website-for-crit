@@ -16,7 +16,7 @@ body {
 }
 
 .post-title {
-    font-size: 3em;  /* 再放大 */
+    font-size: 6em;  /* 再放大 */
     color: #ffffff;
     text-shadow: 3px 3px 0 #000, 5px 5px 0 #555;  /* 复古粗投影 */
     margin-bottom: 20px;
