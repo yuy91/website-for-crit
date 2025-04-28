@@ -1,152 +1,49 @@
-body {
-    font-family: Arial, Verdana, sans-serif;
-    background: url('https://raw.githubusercontent.com/yuy91/website-for-crit/main/frutiger-aero-wallpapers-v0-257rv62urfkc1.png.webp') no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    color: #000;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutiger Aero Retro Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 页面头部 -->
+    <header>
+        <h1>Welcome to the Bubble Archive</h1>
+    </header>
 
-header {
-    text-align: center;
-    padding: 20px 0;
-    background: rgba(255, 255, 255, 0.5);
-}
+    <!-- 滚动公告条 -->
+    <marquee behavior="scroll" direction="left">
+        Latest Updates: Floating through the digital clouds...
+    </marquee>
 
-h1 {
-    font-size: 2em;
-    color: #00008b;
-}
+    <!-- 主要内容区域：漂浮的泡泡链接 -->
+    <main>
+        <div class="posts">
+            <div class="bubble">
+                <a href="post1.html">Study Finds 87% Of Conversations Are Just People Saying “That’s Crazy”</a>
+            </div>
+            <div class="bubble">
+                <a href="post2.html">Creepy Story Archive Entry</a>
+            </div>
+            <div class="bubble">
+                <a href="post3.html">Florida Man Throws Alligator Into Drive-Thru Window</a>
+            </div>
+            <div class="bubble">
+                <a href="post4.html">Untitled Film Review #12</a>
+            </div>
+            <div class="bubble">
+                <a href="post5.html">Forum Thread: My Friend Keeps Dating My Exes</a>
+            </div>
+            <div class="bubble">
+                <a href="post6.html">Untitled Note Scan</a>
+            </div>
+        </div>
+    </main>
 
-marquee {
-    background: rgba(255, 255, 255, 0.7);
-    color: #0000ee;
-    font-weight: bold;
-    padding: 8px 0;
-    border-top: 2px solid #0000ee;
-    border-bottom: 2px solid #0000ee;
-}
-
-.posts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 30px;
-}
-
-.bubble {
-    width: 200px;
-    height: 250px;
-    background: url('https://raw.githubusercontent.com/yuy91/website-for-crit/main/pngimg.com%20-%20soap_bubbles_PNG110008.png') no-repeat center center;
-    background-size: contain;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    text-align: center;
-    animation: float 6s ease-in-out infinite;
-}
-
-/* 图片大小控制 */
-.bubble img {
-    max-width: 80%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.bubble:nth-child(even) {
-    animation-delay: 3s;
-}
-
-.bubble a {
-    color: #0000ee;
-    text-decoration: underline;
-    font-weight: bold;
-    padding: 5px;
-}
-
-.bubble a:hover {
-    color: #551a8b;
-}
-
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0px); }
-}
-
-footer {
-    text-align: center;
-    padding: 15px 0;
-    background: rgba(255, 255, 255, 0.5);
-    margin-top: 40px;
-    font-size: 0.9em;
-}
-
-/* 弹窗广告样式 */
-#popup-ad {
-    width: 300px;
-    padding: 15px;
-    background: #fff8dc;
-    border: 4px solid #ff0000;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
-    display: none;
-    box-shadow: 8px 8px #000;
-    text-align: center;
-    font-family: 'Comic Sans MS', cursive;
-}
-
-.popup-header {
-    display: flex;
-    justify-content: space-between;
-    background: #ff0000;
-    color: white;
-    padding: 5px;
-    font-weight: bold;
-    font-size: 0.9em;
-}
-
-#close-btn {
-    background: #fff;
-    border: 1px solid #000;
-    cursor: pointer;
-    padding: 0 5px;
-}
-
-#popup-ad h2 {
-    font-size: 1.5em;
-    color: #000;
-    margin: 10px 0;
-}
-
-#popup-ad img {
-    width: 80%;
-    margin: 10px 0;
-    border: 2px dashed #000;
-    background: #eee;
-}
-
-.popup-text {
-    font-size: 1em;
-    color: red;
-    font-weight: bold;
-    animation: blink 1s infinite;
-}
-
-.gif-icon {
-    width: 40px;
-    margin-top: 10px;
-}
-
-/* 闪烁动画 */
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}
+    <!-- 页面底部 -->
+    <footer>
+        <p>© 2024 Bubble Archive | Floating Since 1999</p>
+    </footer>
+</body>
+</html>
