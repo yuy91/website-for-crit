@@ -1,156 +1,156 @@
-/* ====== 基础样式 ====== */
+/* General Styles */
 body {
-    font-family: Arial, Verdana, sans-serif;
-    background: url('https://raw.githubusercontent.com/yuy91/website-for-crit/main/frutiger-aero-wallpapers-v0-257rv62urfkc1.png.webp') no-repeat center center fixed;
-    background-size: cover;
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
     margin: 0;
     padding: 0;
-    color: #000;
+    box-sizing: border-box;
 }
 
 header {
+    background-color: #90e0ef;
     text-align: center;
-    padding: 20px 0;
-    background: rgba(255, 255, 255, 0.5);
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    font-size: 2em;
-    color: #00008b;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: white;
 }
 
+/* Marquee for the latest updates */
 marquee {
-    background: rgba(255, 255, 255, 0.7);
-    color: #0000ee;
-    font-weight: bold;
-    padding: 8px 0;
-    border-top: 2px solid #0000ee;
-    border-bottom: 2px solid #0000ee;
+    font-size: 1.2em;
+    color: #1d3557;
+    margin: 20px 0;
 }
 
-.posts {
+/* Main Content */
+main {
+    padding: 20px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 30px;
+    gap: 30px;
+    margin-top: 20px;
 }
 
+/* Bubble Styling */
 .bubble {
-    width: 200px;
-    height: 200px;
-    background: url('https://raw.githubusercontent.com/yuy91/website-for-crit/main/pngimg.com%20-%20soap_bubbles_PNG110008.png') no-repeat center center;
-    background-size: contain;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    padding: 30px;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
     margin: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
     text-align: center;
-    animation: float 6s ease-in-out infinite;
-}
-
-.bubble img {
-    max-width: 80%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.bubble:nth-child(even) {
-    animation-delay: 3s;
+    vertical-align: middle;
 }
 
 .bubble a {
-    color: #0000ee;
-    text-decoration: underline;
+    color: #1d3557;
     font-weight: bold;
-    padding: 10px;
-    background: rgba(255,255,255,0.6);
-    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.1em;
 }
 
 .bubble a:hover {
-    color: #551a8b;
+    color: #f1faee;
 }
 
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0px); }
-}
-
-footer {
-    text-align: center;
-    padding: 15px 0;
-    background: rgba(255, 255, 255, 0.5);
-    margin-top: 40px;
-    font-size: 0.9em;
-}
-
-/* ====== 左下角 Windows 风格弹窗 ====== */
+/* Popup Styles */
 #popup-ad {
-    width: 250px;
+    display: none;  /* Hidden by default */
     position: fixed;
-    bottom: 20px;
-    left: 20px;
-    background: #c0dfff;
-    border: 2px solid #000080;
-    box-shadow: 4px 4px #666;
-    font-family: Arial, Verdana, sans-serif;
-    display: none;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #D3D3D3;  /* Light gray background */
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #1d3557;  /* Blue border for retro feel */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
     z-index: 1000;
-    animation: slideIn 1s forwards;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
 }
 
 .popup-header {
-    background: #000080;
+    background: linear-gradient(to right, #1d3557, #4a90e2);  /* Blue gradient background */
     color: white;
     padding: 5px;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.9em;
+}
+
+.popup-header span {
+    font-size: 1.3em;
 }
 
 #close-btn {
-    background: #fff;
-    border: 1px solid #000;
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
     cursor: pointer;
-    padding: 0 5px;
-    font-weight: bold;
+    border-radius: 5px;
 }
 
-#popup-ad h2 {
-    font-size: 1em;
-    color: #000;
-    margin: 10px;
-    text-align: center;
+#close-btn:hover {
+    background-color: #cc2929;
 }
 
-#popup-ad img {
-    width: 80%;
-    display: block;
-    margin: 0 auto 10px auto;
-    border: 1px solid #000;
+.popup-content img {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
 }
 
 .popup-text {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #1d3557;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #90e0ef;
     text-align: center;
-    font-size: 0.9em;
-    color: red;
-    font-weight: bold;
-    animation: blink 1s infinite;
-    margin-bottom: 10px;
+    padding: 10px 0;
+    margin-top: 40px;
 }
 
-/* 动画效果 */
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
+footer p {
+    margin: 0;
+    font-size: 1em;
+    color: #1d3557;
 }
 
-@keyframes slideIn {
-    from { transform: translateY(100px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; display: block; }
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .bubble {
+        width: 200px;
+        height: 200px;
+        padding: 15px;
+    }
+
+    .popup-ad {
+        width: 250px;
+    }
+
+    .popup-text {
+        font-size: 0.9em;
+    }
 }
